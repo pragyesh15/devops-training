@@ -1,0 +1,18 @@
+---
+# for comment
+- name: This is a sample playbook for use of ping module.
+  hosts: all
+  ignore_errors: yes
+  become: yes
+
+  tasks:
+    - name: Install a non existing 
+      apt: name=chdkfjdfk state=present
+ 
+    - name: This is a sub task. Ping the machine
+      ping: 
+
+    - name: This is another task
+      debug: msg=Hello!
+
+
